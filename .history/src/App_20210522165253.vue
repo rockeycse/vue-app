@@ -2,8 +2,8 @@
   <div id="app" class="small-container">
     <h1>Employees</h1>
 
-    <employee-form @add:employee="addEmployee" />
-    <employee-table :employees="employees" @delete:employee="deleteEmployee" />
+    <employee-form @add:employee="addEmployee"  @delete:employee="deleteEmployee" />
+    <employee-table :employees="employees" />
   </div>
 </template>
 

@@ -12,6 +12,7 @@
       />
       <label>Employee Email</label>
       <input
+        ref="first"
         type="text"
         :class="{ 'has-error': submitting && invalidEmail }"
         v-model="employee.email"
