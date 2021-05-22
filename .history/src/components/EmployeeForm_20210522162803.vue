@@ -24,7 +24,7 @@
     methods: {
         handleSubmit(){
             this.$emit('add:employee', this.employee);
-            // console.log(this.employee);
+            console.log(this.employee)
         }
     }
   }

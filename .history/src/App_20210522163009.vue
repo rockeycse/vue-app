@@ -47,9 +47,9 @@ export default {
           ? this.employees[this.employees.length - 1].id
           : 0;
       const id = lastId + 1;
-      const newEmployee = { ...employee, id };
+      const newEmployee = { employee, id };
 
-      this.employees = [ ...this.employees, newEmployee];
+      this.employees = [ this.employees, newEmployee];
     },
   },
   

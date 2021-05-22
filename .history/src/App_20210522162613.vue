@@ -2,7 +2,7 @@
   <div id="app" class="small-container">
     <h1>Employees</h1>
 
-    <employee-form @add:employee="addEmployee" />
+    <employee-form :add:employee="addEmployee" />
     <employee-table :employees="employees" />
   </div>
 </template>
@@ -47,9 +47,9 @@ export default {
           ? this.employees[this.employees.length - 1].id
           : 0;
       const id = lastId + 1;
-      const newEmployee = { ...employee, id };
+      const newEmployee = { employee, id };
 
-      this.employees = [ ...this.employees, newEmployee];
+      this.employees = [...this.employees, newEmployee];
     },
   },
   

@@ -49,7 +49,7 @@ export default {
       const id = lastId + 1;
       const newEmployee = { ...employee, id };
 
-      this.employees = [ ...this.employees, newEmployee];
+      this.employees = [ this.employees, newEmployee];
     },
   },
   
