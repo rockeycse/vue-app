@@ -1,8 +1,7 @@
 <template>
   <div id="app" class="small-container">
     <h1>Employees</h1>
-
-    <employee-form @add:employee="addEmployee" />
+    <employee-form />
     <employee-table :employees="employees" />
   </div>
 </template>
